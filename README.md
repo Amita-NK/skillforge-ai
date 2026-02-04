@@ -95,6 +95,13 @@ Designed to support 10,000+ concurrent learners with serverless scalability.
 - Audit logging and monitoring  
 
 ---
+## Architecture Snapshot
+
+View High-level cloud-native design of SkillForge AI+ here:
+
+[Cloud Architecture](architecture/cloud_architecture.png)
+
+Designed using AWS serverless infrastructure for scalability and reliability.
 
 ## Social Impact
 
@@ -131,6 +138,19 @@ Includes:
 • Settings  
 • Desktop view  
 • Mobile responsive view
+
+## Why SkillForge AI+ is Different
+
+Unlike generic AI tutors, SkillForge AI+ provides:
+
+• Adaptive learning paths  
+• Real-time debugging assistance  
+• Gamified engagement  
+• Secure sandbox execution  
+• Cloud-native scalability  
+• Accessibility-first design  
+
+This makes it a complete learning ecosystem rather than a simple chatbot.
 
 ## Team
 
