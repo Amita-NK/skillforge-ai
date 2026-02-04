@@ -1,20 +1,28 @@
 <p align="center">
-  <img src="assets/logo.png" alt="SkillForge AI+ Logo" width="300"/>
+  <img src="assets/logo.png" alt="SkillForge AI+ Logo" width="220"/>
 </p>
 
-<h1 align="center">SkillForge AI+</h1>
+<h1 align="center">SkillForge AI+ <img src="https://img.shields.io/badge/Live-brightgreen?style=flat-square"/>
+</h1>
 
 <p align="center">
-  Adaptive Intelligence for Secure Learning
+  <b>Adaptive Intelligence for Secure Learning</b>
 </p>
 
 <p align="center">
   Forge skills • Secure learning • Scale without limits
 </p>
 
-
-
 ---
+
+
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![AI](https://img.shields.io/badge/AI-Adaptive-blue)
+![CyberSecurity](https://img.shields.io/badge/Cyber-Security-red)
+![EdTech](https://img.shields.io/badge/EdTech-Learning-purple)
+![Hackathon](https://img.shields.io/badge/Hackathon-2026-green)
+![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen)
+
 
 ## Problem
 
@@ -155,3 +163,6 @@ This makes it a complete learning ecosystem rather than a simple chatbot.
 ## Team
 
 INNO-V-A-TORS
+- [Nedurumalli Ved Varshith Reddy](https://github.com/Varshith78)
+- [Amita Narayanan Kutty](https://github.com/Amita-NK)
+
