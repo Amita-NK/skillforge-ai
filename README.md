@@ -1,8 +1,18 @@
-# SkillForge AI+
+<p align="center">
+  <img src="assets/logo.png" alt="SkillForge AI+ Logo" width="300"/>
+</p>
 
-## Adaptive Intelligence for Secure Learning
+<h1 align="center">SkillForge AI+</h1>
 
-Forge skills. Secure learning. Scale without limits.
+<p align="center">
+  Adaptive Intelligence for Secure Learning
+</p>
+
+<p align="center">
+  Forge skills • Secure learning • Scale without limits
+</p>
+
+
 
 ---
 
