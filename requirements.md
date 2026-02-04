@@ -1,4 +1,4 @@
-# SkillForge AI+ – Requirements Document
+# Requirements 
 
 ---
 
