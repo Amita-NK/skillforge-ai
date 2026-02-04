@@ -8,7 +8,7 @@ The following screens represent the complete user journey.
 
 ------------------------------------------------------------
 
-1. Authentication (authentication.png)
+1. [Authentication](screenshots/authentication.png)
 
 This is the secure entry point of the system.
 
@@ -23,7 +23,7 @@ Ensures that every learner’s progress, notes, and performance data are safely 
 
 ------------------------------------------------------------
 
-2. Dashboard (dashboard.png)
+2. [Dashboard](screenshots/dashboard.png)
 
 The dashboard acts as the learner’s home screen.
 
@@ -40,7 +40,7 @@ Provides an instant overview of progress and motivates learners through measurab
 
 ------------------------------------------------------------
 
-3. Learning Studio (learning_studio.png)
+3. [Learning Studio](screenshots/learning_studio.png)
 
 The core learning environment.
 
@@ -56,7 +56,7 @@ Helps users understand topics faster with personalized and interactive learning 
 
 ------------------------------------------------------------
 
-4. Smart Debugger (smart_debugger.png)
+4. [Smart Debugger](screenshots/smart_debugger.png)
 
 An AI-powered developer productivity tool.
 
@@ -72,7 +72,7 @@ Reduces debugging time and improves coding efficiency through intelligent guidan
 
 ------------------------------------------------------------
 
-5. Challenges (challenges.png)
+5. [Challenges](screenshots/challenges.png)
 
 Gamified learning section.
 
@@ -88,7 +88,7 @@ Encourages consistent practice and keeps learners motivated through friendly com
 
 ------------------------------------------------------------
 
-6. Settings (settings.png)
+6. [Settings](screenshots/settings.png)
 
 Personalization and accessibility controls.
 
@@ -104,7 +104,7 @@ Ensures inclusivity and supports diverse learners across devices and regions.
 
 ------------------------------------------------------------
 
-7. Desktop View (desktop_view.png)
+7. [Desktop View](screenshots/desktop_view.png)
 
 Demonstrates full desktop layout.
 
@@ -113,7 +113,7 @@ Shows clean dashboard design and optimized workspace for extended coding session
 
 ------------------------------------------------------------
 
-8. Mobile View (mobile_view.jpeg)
+8. [Mobile View](screenshots/mobile_view.jpeg)
 
 Responsive mobile interface.
 
