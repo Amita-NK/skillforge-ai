@@ -29,7 +29,7 @@
 
 Students and developers today face multiple challenges:
 
-- Difficulty understanding complex technical concepts  
+- Difficulty in understanding complex technical concepts  
 - Excessive time spent debugging code  
 - Static, non-personalized learning platforms  
 - Low engagement and burnout  
@@ -164,6 +164,7 @@ This makes it a complete learning ecosystem rather than a simple chatbot.
 ## Team
 
 INNO-V-A-TORS
-- [Nedurumalli Ved Varshith Reddy](https://github.com/Varshith78)
 - [Amita Narayanan Kutty](https://github.com/Amita-NK)
+- [Nedurumalli Ved Varshith Reddy](https://github.com/Varshith78)
+
 
