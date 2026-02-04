@@ -21,6 +21,7 @@
 ![CyberSecurity](https://img.shields.io/badge/Cyber-Security-red)
 ![EdTech](https://img.shields.io/badge/EdTech-Learning-purple)
 ![Hackathon](https://img.shields.io/badge/Hackathon-2026-green)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-brightgreen)
 
 
