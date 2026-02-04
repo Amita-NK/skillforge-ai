@@ -117,6 +117,21 @@ Designed specifically for Bharat:
 
 ---
 
+## Demo & Screenshots
+
+View complete demo here:  
+[Open Demo Screens & Notes](demo/demo-notes.md)
+
+Includes:
+• Authentication flow  
+• Dashboard  
+• Learning Studio  
+• Smart Debugger  
+• Challenges  
+• Settings  
+• Desktop view  
+• Mobile responsive view
+
 ## Team
 
 INNO-V-A-TORS
