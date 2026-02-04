@@ -136,7 +136,7 @@ Designed specifically for Bharat:
 ## Demo & Screenshots
 
 View complete demo here:  
-[Open Demo Screens & Notes](demo/demo-notes.md)
+[Open Demo Screens & Notes](demo/demo_notes.md)
 
 Includes:
 • Authentication flow  
