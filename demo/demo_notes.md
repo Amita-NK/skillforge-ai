@@ -1,4 +1,4 @@
-# SkillForge AI+ – UI Demonstration Notes
+# UI Demonstration Notes
 
 This folder contains visual mockups of the SkillForge AI+ platform.
 
