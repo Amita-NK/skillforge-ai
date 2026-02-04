@@ -1,4 +1,4 @@
-# SkillForge AI+ – Design Document
+# Design Overview
 
 ## 1. Architecture Overview
 
