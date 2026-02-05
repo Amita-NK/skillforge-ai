@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkillForge AI+
+
+Adaptive Intelligence for Secure Learning
+
+SkillForge AI+ is an AI-powered adaptive learning and developer productivity platform that personalizes education, improves coding efficiency, and ensures secure code execution through cloud-native architecture.
+
+---
+
+## Live Application
+
+Production Deployment  
+https://skillforge-ai.vercel.app
+
+If the link is not accessible, run the project locally using the setup instructions below.
+
+---
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- React
+- AWS Cloud Services
+- Secure Sandbox Execution
+- Serverless Architecture
+
+Built using the framework provided by :contentReference[oaicite:0]{index=0} and deployed on :contentReference[oaicite:1]{index=1}.
+
+---
+
+## Features
+
+- Adaptive learning paths
+- AI-powered explanations
+- Smart code debugging assistance
+- Productivity and fatigue tracking
+- Secure sandbox execution
+- Offline and multilingual support
+- Scalable cloud-native backend
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/skillforge-ai.git
+cd skillforge-ai
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+or
+
+```bash
+yarn install
+```
+
+or
+
+```bash
+pnpm install
+```
+
+---
+
+## Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The page automatically reloads as you edit files.
 
-## Learn More
+Main entry point:
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/page.tsx
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Available Scripts
 
-## Deploy on Vercel
+```bash
+npm run dev        # start development server
+npm run build      # production build
+npm run start      # start production server
+npm run lint       # lint code
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+```
+app/              application routes and pages
+components/       reusable UI components
+lib/              utilities and helpers
+public/           static assets
+assets/           logos and images
+styles/           global styles
+```
+
+---
+
+## Deployment
+
+This project is optimized for deployment on Vercel.
+
+### Deploy with Vercel
+
+```bash
+npm run build
+```
+
+Then connect the repository to Vercel dashboard for automatic CI/CD.
+
+Steps:
+
+1. Push code to GitHub
+2. Import repository into Vercel
+3. Select Next.js framework preset
+4. Deploy
+
+Each push triggers automatic builds.
+
+---
+
+## Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_API_URL=your_api_url
+AWS_REGION=your_region
+```
+
+---
+
+## Documentation
+
+- requirements.md
+- design.md
+- architecture/
+- docs/
+- ppt/
+
+---
+
+## Team
+
+INNO-V-A-TORS
+
+---
+
+## License
+
+MIT License
