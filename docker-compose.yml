@@ -36,8 +36,8 @@ services:
     # Only backend can communicate with it via Docker network
     expose:
       - "8000"
-    # ports:  # COMMENTED OUT - Do not expose to host machine
-    #   - "8000:8000"
+    ports:  # COMMENTED OUT - Do not expose to host machine
+       - "8000:8000"
     environment:
       - AWS_REGION=${AWS_REGION:-us-east-1}
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}

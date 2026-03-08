@@ -1,11 +1,11 @@
 """
 Bedrock Client Wrapper
-Provides a clean interface for Amazon Bedrock API with retry logic and error handling
+Provides a clean interface for Amazon Bedrock Converse API with retry logic and error handling
 """
 import json
 import time
 import logging
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 import boto3
 from botocore.config import Config
 from botocore.exceptions import ClientError, BotoCoreError
@@ -20,25 +20,10 @@ class BedrockClientError(Exception):
 
 class BedrockClient:
     """
-    Wrapper for Amazon Bedrock API with support for multiple model families
+    Wrapper for Amazon Bedrock Converse API
     Implements retry logic with exponential backoff for resilient API calls
+    Uses the unified Converse API that works with all Bedrock models
     """
-    
-    # Model family configurations
-    MODEL_CONFIGS = {
-        'claude': {
-            'request_format': 'anthropic',
-            'response_key': 'completion'
-        },
-        'titan': {
-            'request_format': 'amazon',
-            'response_key': 'results'
-        },
-        'llama': {
-            'request_format': 'meta',
-            'response_key': 'generation'
-        }
-    }
     
     def __init__(
         self,
@@ -52,7 +37,7 @@ class BedrockClient:
         
         Args:
             region: AWS region for Bedrock service
-            model_id: Bedrock model identifier (e.g., 'anthropic.claude-v2')
+            model_id: Bedrock model identifier (e.g., 'qwen.qwen3-coder-next', 'anthropic.claude-v2')
             max_retries: Maximum number of retry attempts
             timeout: Request timeout in seconds
         """
@@ -71,36 +56,12 @@ class BedrockClient:
         # Initialize Bedrock runtime client
         try:
             self.client = boto3.client('bedrock-runtime', config=self.config)
-            logger.info(f"Initialized Bedrock client for region {region} with model {model_id}")
+            logger.info(f"Initialized Bedrock Converse client for region {region} with model {model_id}")
         except Exception as e:
             logger.error(f"Failed to initialize Bedrock client: {str(e)}")
             raise BedrockClientError(f"Failed to initialize Bedrock client: {str(e)}")
-        
-        # Determine model family
-        self.model_family = self._detect_model_family(model_id)
     
-    def _detect_model_family(self, model_id: str) -> str:
-        """
-        Detect model family from model ID
-        
-        Args:
-            model_id: Bedrock model identifier
-            
-        Returns:
-            Model family name ('claude', 'titan', or 'llama')
-        """
-        model_id_lower = model_id.lower()
-        if 'claude' in model_id_lower or 'anthropic' in model_id_lower:
-            return 'claude'
-        elif 'titan' in model_id_lower or 'amazon' in model_id_lower:
-            return 'titan'
-        elif 'llama' in model_id_lower or 'meta' in model_id_lower:
-            return 'llama'
-        else:
-            logger.warning(f"Unknown model family for {model_id}, defaulting to claude")
-            return 'claude'
-
-    def _build_request_body(
+    def _build_converse_request(
         self,
         prompt: str,
         max_tokens: int,
@@ -108,7 +69,7 @@ class BedrockClient:
         top_p: float
     ) -> Dict[str, Any]:
         """
-        Build request body based on model family
+        Build request for Bedrock Converse API
         
         Args:
             prompt: Input prompt for the model
@@ -117,59 +78,59 @@ class BedrockClient:
             top_p: Nucleus sampling parameter
             
         Returns:
-            Request body formatted for the specific model family
+            Request parameters for converse() API
         """
-        if self.model_family == 'claude':
-            return {
-                "prompt": f"\n\nHuman: {prompt}\n\nAssistant:",
-                "max_tokens_to_sample": max_tokens,
-                "temperature": temperature,
-                "top_p": top_p,
-                "stop_sequences": ["\n\nHuman:"]
-            }
-        elif self.model_family == 'titan':
-            return {
-                "inputText": prompt,
-                "textGenerationConfig": {
-                    "maxTokenCount": max_tokens,
-                    "temperature": temperature,
-                    "topP": top_p
+        return {
+            "modelId": self.model_id,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "text": prompt
+                        }
+                    ]
                 }
-            }
-        elif self.model_family == 'llama':
-            return {
-                "prompt": prompt,
-                "max_gen_len": max_tokens,
+            ],
+            "inferenceConfig": {
+                "maxTokens": max_tokens,
                 "temperature": temperature,
-                "top_p": top_p
+                "topP": top_p
             }
-        else:
-            raise BedrockClientError(f"Unsupported model family: {self.model_family}")
+        }
     
-    def _extract_response_text(self, response_body: Dict[str, Any]) -> str:
+    def _extract_converse_response(self, response: Dict[str, Any]) -> str:
         """
-        Extract generated text from response based on model family
+        Extract generated text from Converse API response
         
         Args:
-            response_body: Response body from Bedrock API
+            response: Response from Bedrock Converse API
             
         Returns:
             Generated text content
         """
         try:
-            if self.model_family == 'claude':
-                return response_body.get('completion', '')
-            elif self.model_family == 'titan':
-                results = response_body.get('results', [])
-                if results and len(results) > 0:
-                    return results[0].get('outputText', '')
-                return ''
-            elif self.model_family == 'llama':
-                return response_body.get('generation', '')
-            else:
-                raise BedrockClientError(f"Unsupported model family: {self.model_family}")
+            # Extract text from response structure:
+            # response["output"]["message"]["content"][0]["text"]
+            output = response.get("output", {})
+            message = output.get("message", {})
+            content = message.get("content", [])
+            
+            if not content or len(content) == 0:
+                logger.error("No content in response")
+                raise BedrockClientError("Empty response from Bedrock")
+            
+            text = content[0].get("text", "")
+            
+            if not text:
+                logger.error("No text in content block")
+                raise BedrockClientError("No text in response content")
+            
+            return text
+            
         except (KeyError, IndexError, TypeError) as e:
             logger.error(f"Failed to extract response text: {str(e)}")
+            logger.error(f"Response structure: {json.dumps(response, indent=2)}")
             raise BedrockClientError(f"Failed to parse response: {str(e)}")
     
     def invoke_model(
@@ -180,7 +141,7 @@ class BedrockClient:
         top_p: float = 0.9
     ) -> str:
         """
-        Invoke Bedrock model with retry logic and exponential backoff
+        Invoke Bedrock model using Converse API with retry logic and exponential backoff
         
         Args:
             prompt: Input prompt for the model
@@ -194,26 +155,20 @@ class BedrockClient:
         Raises:
             BedrockClientError: If the API call fails after all retries
         """
-        # Build request body
-        body = self._build_request_body(prompt, max_tokens, temperature, top_p)
+        # Build request parameters for Converse API
+        request_params = self._build_converse_request(prompt, max_tokens, temperature, top_p)
         
         # Retry loop with exponential backoff
         last_exception = None
         for attempt in range(self.max_retries):
             try:
-                logger.info(f"Invoking Bedrock model {self.model_id} (attempt {attempt + 1}/{self.max_retries})")
+                logger.info(f"Invoking Bedrock model {self.model_id} via Converse API (attempt {attempt + 1}/{self.max_retries})")
                 
-                # Call Bedrock API
-                response = self.client.invoke_model(
-                    modelId=self.model_id,
-                    body=json.dumps(body),
-                    contentType='application/json',
-                    accept='application/json'
-                )
+                # Call Bedrock Converse API
+                response = self.client.converse(**request_params)
                 
-                # Parse response
-                response_body = json.loads(response['body'].read())
-                result = self._extract_response_text(response_body)
+                # Extract text from response
+                result = self._extract_converse_response(response)
                 
                 logger.info(f"Successfully invoked Bedrock model, generated {len(result)} characters")
                 return result
@@ -261,10 +216,6 @@ class BedrockClient:
                     logger.info(f"Retrying in {backoff_time} seconds")
                     time.sleep(backoff_time)
                     
-            except json.JSONDecodeError as e:
-                logger.error(f"Failed to parse response JSON: {str(e)}")
-                raise BedrockClientError(f"Invalid JSON response from Bedrock: {str(e)}")
-                
             except Exception as e:
                 logger.error(f"Unexpected error invoking Bedrock: {str(e)}")
                 last_exception = e
@@ -290,7 +241,7 @@ class BedrockClient:
         """
         return {
             'model_id': self.model_id,
-            'model_family': self.model_family,
             'region': self.region,
-            'max_retries': str(self.max_retries)
+            'max_retries': str(self.max_retries),
+            'api_version': 'converse'
         }
