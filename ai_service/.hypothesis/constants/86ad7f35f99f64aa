@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\ltr.py
+# hypothesis_version: 6.151.9
+
+['/_ltr', '/_ltr/_cachestats', 'DELETE', 'GET', 'POST', 'PUT', '_addfeatures', '_clearcache', '_createmodel', '_feature', '_featureset', '_ltr', '_model', '_plugins', 'error_trace', 'filter_path', 'from', 'from_', 'human', 'merge', 'prefix', 'pretty', 'routing', 'size', 'source', 'stats', 'timeout', 'version']

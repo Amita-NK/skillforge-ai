@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\observability.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_observability', '_plugins', 'error_trace', 'filter_path', 'human', 'object', 'objectId', 'objectIdList', 'pretty', 'source']

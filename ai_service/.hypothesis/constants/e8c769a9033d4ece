@@ -1,0 +1,4 @@
+# file: C:\Users\HP\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\skill\skillforge-ai\ai_service\embeddings.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1536, 8000, 'Code', 'Error', 'Message', 'Text cannot be empty', 'Unknown', 'adaptive', 'application/json', 'bedrock-runtime', 'body', 'embedding', 'inputText', 'max_attempts', 'mode']

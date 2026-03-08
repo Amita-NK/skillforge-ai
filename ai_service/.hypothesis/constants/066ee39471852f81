@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\response\hit.py
+# hypothesis_version: 6.151.9
+
+['/', '<Hit({}): {}>', 'Hit', 'HitMeta', '_source', 'fields', 'id', 'index', 'meta']

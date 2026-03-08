@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\compat.py
+# hypothesis_version: 6.151.9
+
+['Mapping', 'Queue', 'ascii', 'map', 'quote', 'quote_plus', 'reraise_exceptions', 'string_types', 'unquote', 'urlencode', 'urlparse']

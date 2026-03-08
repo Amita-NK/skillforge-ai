@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\connection\base.py
+# hypothesis_version: 6.151.9
+
+[404, 9200, '\n#', '#[%s] (%.3fs)\n#%s', "'", ',', '/', '1', ':', ': ', ';', '< %s', '> %s', '?', '?pretty', '?pretty&', 'HEAD', 'N/A', 'SSL_CERT_DIR', 'SSL_CERT_FILE', '\\"([^\\"]*)\\"', '\\u0027', 'accept', 'accept-encoding', 'application/json', 'content-type', 'error', 'gzip,deflate', 'headers', 'http', 'https', 'ignore', 'localhost', 'opensearch', 'opensearchpy.trace', 'scheme', 'text/plain', 'type', 'user-agent', 'utf-8', 'wb', 'x-opaque-id']

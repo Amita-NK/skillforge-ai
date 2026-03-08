@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\transport.py
+# hypothesis_version: 6.151.9
+
+[0.1, 200, 300, 404, 502, 503, 504, '/', '/_nodes/_all/http', ':', 'GET', 'HEAD', 'N/A', 'POST', 'TransportError', 'application/json', 'cluster_manager', 'connection_pool', 'content-type', 'host', 'http', 'ignore', 'nodes', 'pool_maxsize', 'port', 'publish_address', 'request_timeout', 'roles', 'source', 'surrogatepass', 'timeout', 'utf-8']

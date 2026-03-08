@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\utils.py
+# hypothesis_version: 6.151.9
+
+[b'\n', b',*', 443, ',', '/', ':', '://', 'api_key', 'authorization', 'error_trace', 'filter_path', 'format', 'headers', 'host', 'http_auth', 'https', 'human', 'ignore', 'opaque_id', 'params', 'port', 'pretty', 'request_timeout', 'timeout', 'url_prefix', 'use_ssl', 'utf-8', 'x-opaque-id', '{}:{}']

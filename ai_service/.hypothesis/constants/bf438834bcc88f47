@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\index_management.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_ism', '_plugins', 'add', 'change_policy', 'explain', 'policies', 'remove', 'retry', 'show_policy']

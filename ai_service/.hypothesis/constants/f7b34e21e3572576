@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\geospatial.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_plugins', '_settings', 'datasource', 'error_trace', 'filter_path', 'geospatial', 'human', 'ip2geo', 'pretty', 'source']

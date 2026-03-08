@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\ingestion.py
+# hypothesis_version: 6.151.9
+
+['GET', 'POST', '_pause', '_resume', '_state', 'error_trace', 'filter_path', 'human', 'ingestion', 'next_token', 'pretty', 'size', 'source', 'timeout']

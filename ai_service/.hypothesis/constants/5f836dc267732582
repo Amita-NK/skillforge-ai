@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\document.py
+# hypothesis_version: 6.151.9
+
+[400, 404, '*', ', ', 'Index', 'Meta', 'No index', '_', '_doc_type', '_id', '_index', '_name', '_source', 'aliases', 'analyzers', 'default', 'detect_noop', 'doc', 'doc_as_upsert', 'docs', 'error', 'found', 'id', 'if_primary_term', 'if_seq_no', 'index', 'mapping', 'name', 'none', 'params', 'primary_term', 'raise', 'result', 'retry_on_conflict', 'script', 'scripted_upsert', 'seq_no', 'settings', 'skip', 'source', 'upsert', 'using', '{}({})']

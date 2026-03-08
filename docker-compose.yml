@@ -1,0 +1,115 @@
+version: '3.8'
+
+# ============================================================================
+# SkillForge AI+ Docker Compose Configuration
+# ============================================================================
+#
+# ARCHITECTURE:
+#   Frontend (Port 3000) → Backend (Port 5000) → AI Service (Internal Only)
+#
+# SECURITY:
+#   - AI Service is NOT exposed to host machine (no port mapping)
+#   - Only Backend can communicate with AI Service via Docker network
+#   - Frontend must NEVER call AI Service directly
+#   - All AI requests flow through Backend API Gateway
+#
+# SERVICES:
+#   - ai-service: FastAPI AI microservice (internal only)
+#   - backend: Flask API gateway (exposed on port 5000)
+#   - db: MySQL database (optional, commented out by default)
+#
+# USAGE:
+#   docker-compose up -d          # Start all services
+#   docker-compose logs -f        # View logs
+#   docker-compose down           # Stop all services
+#
+# ============================================================================
+
+services:
+  # AI Microservice (FastAPI)
+  ai-service:
+    build:
+      context: ./ai_service
+      dockerfile: Dockerfile
+    container_name: skillforge-ai-service
+    # NOTE: AI service is INTERNAL ONLY - not exposed to host
+    # Only backend can communicate with it via Docker network
+    expose:
+      - "8000"
+    # ports:  # COMMENTED OUT - Do not expose to host machine
+    #   - "8000:8000"
+    environment:
+      - AWS_REGION=${AWS_REGION:-us-east-1}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - BEDROCK_MODEL_ID=${BEDROCK_MODEL_ID:-anthropic.claude-v2}
+      - OPENSEARCH_HOST=${OPENSEARCH_HOST}
+      - OPENSEARCH_USERNAME=${OPENSEARCH_USERNAME}
+      - OPENSEARCH_PASSWORD=${OPENSEARCH_PASSWORD}
+      - OPENSEARCH_INDEX=${OPENSEARCH_INDEX:-skillforge-docs}
+    networks:
+      - skillforge-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Backend API Gateway (Flask)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: skillforge-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - SECRET_KEY=${SECRET_KEY:-dev-secret-key-change-in-production}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-jwt-secret-key-change-in-production}
+      - FLASK_ENV=${FLASK_ENV:-development}
+      - DATABASE_URL=${DATABASE_URL:-sqlite:////app/data/skillforge.db}
+      - AI_SERVICE_URL=http://ai-service:8000
+      - PORT=5000
+    volumes:
+      - backend-data:/app/data
+    depends_on:
+      ai-service:
+        condition: service_healthy
+    networks:
+      - skillforge-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Database (MySQL - Optional, comment out if using SQLite)
+  # db:
+  #   image: mysql:8.0
+  #   container_name: skillforge-db
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-rootpassword}
+  #     - MYSQL_DATABASE=${MYSQL_DATABASE:-skillforge}
+  #     - MYSQL_USER=${MYSQL_USER:-skillforge}
+  #     - MYSQL_PASSWORD=${MYSQL_PASSWORD:-password}
+  #   ports:
+  #     - "3306:3306"
+  #   volumes:
+  #     - mysql-data:/var/lib/mysql
+  #   networks:
+  #     - skillforge-network
+  #   healthcheck:
+  #     test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+networks:
+  skillforge-network:
+    driver: bridge
+
+volumes:
+  backend-data:
+  # mysql-data:  # Uncomment if using MySQL

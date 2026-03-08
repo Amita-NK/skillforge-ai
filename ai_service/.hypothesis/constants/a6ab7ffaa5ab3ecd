@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\alerting.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_acknowledge', '_alerting', '_execute', '_plugins', '_search', 'alerts', 'destinations', 'dryrun', 'monitors']

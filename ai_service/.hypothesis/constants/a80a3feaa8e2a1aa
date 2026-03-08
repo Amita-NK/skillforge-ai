@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\replication.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_pause', '_plugins', '_replication', '_resume', '_start', '_status', '_stop', '_update', 'error_trace', 'filter_path', 'human', 'pretty', 'source']

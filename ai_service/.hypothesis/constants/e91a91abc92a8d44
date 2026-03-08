@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\search.py
+# hypothesis_version: 6.151.9
+
+['-', '.', 'N/A', 'Q', 'Search', '_', '_index', '_matches', '_nested', '_response', '_score', '_source', '_type', 'aggregations', 'aggs', 'collapse', 'count', 'default', 'desc', 'eq', 'error', 'field', 'fields', 'from', 'from_', 'from_opensearch', 'highlight', 'index', 'inner_hits', 'order', 'post_filter', 'query', 'responses', 'script', 'script_fields', 'size', 'sort', 'suggest', 'text', 'type']

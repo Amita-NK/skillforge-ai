@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\nodes.py
+# hypothesis_version: 6.151.9
+
+['GET', 'POST', '_nodes', 'completion_fields', 'doc_type', 'error_trace', 'fielddata_fields', 'fields', 'filter_path', 'flat_settings', 'groups', 'hot_threads', 'human', 'ignore_idle_threads', 'interval', 'level', 'pretty', 'snapshots', 'source', 'stats', 'threads', 'timeout', 'type', 'types', 'usage']

@@ -1,0 +1,4 @@
+# file: C:\Users\HP\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\skill\skillforge-ai\ai_service\main.py
+# hypothesis_version: 6.151.9
+
+[400, 500, 503, 8000, 10000, '*', '/', '/debug/analyze', '/health', '/quiz/generate', '/rag/search', '/rag/upload', '/tutor/explain', '0.0.0.0', '1.0.0', 'Code cannot be empty', 'OPENSEARCH_ENDPOINT', 'OPENSEARCH_PASSWORD', 'OPENSEARCH_USER', '__main__', 'ai-service', 'aws_region', 'content', 'debug', 'direct_upload', 'easy', 'endpoints', 'hard', 'health', 'healthy', 'medium', 'model_id', 'quiz', 'service', 'source', 'status', 'success', 'topic', 'tutor', 'unknown', 'upload_date', 'version']

@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\list.py
+# hypothesis_version: 6.151.9
+
+['/_list', 'GET', '_list', 'bytes', 'error_trace', 'expand_wildcards', 'filter_path', 'format', 'h', 'health', 'help', 'human', 'indices', 'local', 'master_timeout', 'next_token', 'pretty', 'pri', 's', 'shards', 'size', 'sort', 'source', 'time', 'v']

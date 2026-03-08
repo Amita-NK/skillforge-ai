@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\ml.py
+# hypothesis_version: 6.151.9
+
+['/_plugins/_ml/memory', '/_plugins/_ml/tools', 'DELETE', 'GET', 'POST', 'PUT', '_deploy', '_execute', '_load', '_ml', '_plugins', '_predict', '_search', '_train', '_train_predict', '_undeploy', '_unload', 'agents', 'chunk', 'connectors', 'controllers', 'error_trace', 'filter_path', 'human', 'max_results', 'memory', 'message', 'messages', 'model_groups', 'models', 'next_token', 'pretty', 'profile', 'source', 'stats', 'tasks', 'tools', 'traces', 'upload_chunk']

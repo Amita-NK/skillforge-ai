@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\function.py
+# hypothesis_version: 6.151.9
+
+['boost_factor', 'exp', 'field_value_factor', 'filter', 'gauss', 'linear', 'query', 'random_score', 'score_function', 'script_score', 'type', 'value', 'weight']

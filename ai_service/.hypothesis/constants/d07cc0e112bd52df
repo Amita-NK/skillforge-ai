@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\field.py
+# hypothesis_version: 6.151.9
+
+[1000.0, 'InnerDoc', 'Object', 'analyzer', 'binary', 'boolean', 'byte', 'completion', 'constant_keyword', 'custom', 'date', 'date_range', 'double', 'double_range', 'dynamic', 'false', 'field', 'fields', 'float', 'float_range', 'geo_point', 'geo_shape', 'half_float', 'hash', 'integer', 'integer_range', 'ip', 'ip_range', 'join', 'keyword', 'knn_vector', 'long', 'long_range', 'multi', 'murmur3', 'nested', 'normalizer', 'object', 'percolator', 'properties', 'rank_feature', 'rank_features', 'scaled_float', 'search_analyzer', 'search_as_you_type', 'short', 'sparse_vector', 'text', 'token_count', 'type']

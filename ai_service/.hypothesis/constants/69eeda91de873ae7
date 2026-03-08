@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\http.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'HEAD', 'POST', 'PUT']

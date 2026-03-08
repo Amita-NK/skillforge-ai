@@ -1,0 +1,39 @@
+# Example Terraform Variables for SkillForge AI+ Infrastructure
+# Copy this file to terraform.tfvars and fill in your values
+
+# AWS Configuration
+aws_region  = "us-east-1"
+environment = "dev"
+
+# Project Configuration
+project_name = "skillforge-ai"
+
+# VPC Configuration
+vpc_cidr                = "10.0.0.0/16"
+availability_zones      = ["us-east-1a", "us-east-1b"]
+public_subnet_cidrs     = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs    = ["10.0.10.0/24", "10.0.11.0/24"]
+database_subnet_cidrs   = ["10.0.20.0/24", "10.0.21.0/24"]
+
+# ECS Configuration
+backend_desired_count    = 2
+ai_service_desired_count = 2
+
+# ECR Repository URLs (update after creating ECR repositories)
+ecr_backend_repository_url    = "123456789012.dkr.ecr.us-east-1.amazonaws.com/skillforge-backend"
+ecr_ai_service_repository_url = "123456789012.dkr.ecr.us-east-1.amazonaws.com/skillforge-ai-service"
+
+# Secrets Manager ARNs (update after creating secrets)
+db_url_secret_arn      = "arn:aws:secretsmanager:us-east-1:123456789012:secret:skillforge/db-url-xxxxx"
+db_username_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:skillforge/db-username-xxxxx"
+db_password_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:skillforge/db-password-xxxxx"
+jwt_secret_arn         = "arn:aws:secretsmanager:us-east-1:123456789012:secret:skillforge/jwt-secret-xxxxx"
+
+# Bedrock Configuration
+bedrock_model_id = "anthropic.claude-v2"
+
+# OpenSearch Configuration (update after creating OpenSearch domain)
+opensearch_endpoint = "https://vpc-skillforge-vectors-xxxxx.us-east-1.es.amazonaws.com"
+
+# S3 Configuration (update after creating S3 bucket)
+s3_documents_bucket_name = "skillforge-documents-dev"

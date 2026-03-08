@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\cat.py
+# hypothesis_version: 6.151.9
+
+['/_cat', '/_cat/health', '/_cat/master', '/_cat/nodeattrs', '/_cat/nodes', '/_cat/pending_tasks', '/_cat/pit_segments', '/_cat/plugins', '/_cat/repositories', '/_cat/tasks', 'GET', '_cat', 'actions', 'active_only', 'aliases', 'allocation', 'allow_no_indices', 'bytes', 'completed_only', 'count', 'detailed', 'error_trace', 'expand_wildcards', 'fielddata', 'filter_path', 'format', 'full_id', 'h', 'health', 'help', 'human', 'ignore_throttled', 'ignore_unavailable', 'indices', 'local', 'master_timeout', 'nodes', 'parent_task_id', 'pretty', 'pri', 'recovery', 's', 'segment_replication', 'segments', 'shards', 'size', 'snapshots', 'source', 'templates', 'thread_pool', 'time', 'timeout', 'ts', 'v']

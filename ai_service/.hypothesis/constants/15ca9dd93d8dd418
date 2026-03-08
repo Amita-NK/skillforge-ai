@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\analysis.py
+# hypothesis_version: 6.151.9
+
+[', ', 'analyzer', 'attributes', 'builtin', 'char_filter', 'condition', 'custom', 'default', 'explain', 'filter', 'filters', 'get_definition', 'multi', 'multiplexer', 'normalizer', 'text', 'to_dict', 'token_filter', 'tokenizer', 'type']

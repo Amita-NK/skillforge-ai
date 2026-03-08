@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\search_relevance.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_plugins', '_search_relevance', 'error_trace', 'experiments', 'filter_path', 'flat_stat_paths', 'human', 'include_all_nodes', 'include_info', 'include_metadata', 'judgments', 'pretty', 'query_sets', 'source', 'stats']

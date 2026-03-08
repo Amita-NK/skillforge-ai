@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\mapping.py
+# hypothesis_version: 6.151.9
+
+['.', 'Mapping', 'Mapping()', 'Properties', 'Properties()', '_', '_all', '_collect_fields', 'analyzer', 'date_detection', 'default', 'dynamic', 'dynamic_date_formats', 'dynamic_templates', 'enabled', 'field', 'fields', 'hash', 'mappings', 'normalizer', 'numeric_detection', 'properties', 'search_analyzer', 'to_dict', 'transform', 'type', 'update']

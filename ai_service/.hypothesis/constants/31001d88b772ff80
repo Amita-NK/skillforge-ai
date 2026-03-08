@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\tasks.py
+# hypothesis_version: 6.151.9
+
+['/_tasks', 'GET', 'POST', '_cancel', '_tasks', 'actions', 'detailed', 'error_trace', 'filter_path', 'group_by', 'human', 'nodes', 'parent_task_id', 'pretty', 'source', 'timeout', 'wait_for_completion']

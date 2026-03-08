@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\notifications.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_notifications', '_plugins', 'chime.url', 'chime.url.keyword', 'config_id', 'config_id_list', 'config_type', 'configs', 'created_time_ms', 'description', 'description.keyword', 'error_trace', 'feature', 'filter_path', 'human', 'is_enabled', 'last_updated_time_ms', 'microsoft_teams.url', 'name', 'name.keyword', 'pretty', 'query', 'ses_account.region', 'ses_account.role_arn', 'slack.url', 'slack.url.keyword', 'smtp_account.host', 'smtp_account.method', 'sns.role_arn', 'sns.role_arn.keyword', 'sns.topic_arn', 'source', 'test', 'text_query', 'webhook.url', 'webhook.url.keyword']

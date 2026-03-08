@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\_async\helpers\actions.py
+# hypothesis_version: 6.151.9
+
+[100, 404, 429, 500, 600, 1000, 1024, '5m', 'T', '__aiter__', '__anext__', '_doc', '_index', '_scroll_id', '_shards', 'api_key', 'fields', 'headers', 'hits', 'http_auth', 'opensearchpy.helpers', 'scroll', 'scroll_id', 'skipped', 'sort', 'stats_only', 'status', 'successful', 'total', 'yield_ok']

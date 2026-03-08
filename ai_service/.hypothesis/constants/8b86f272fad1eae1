@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\search_pipeline.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'PUT', '_search', 'error_trace', 'filter_path', 'human', 'pipeline', 'pretty', 'source', 'timeout']

@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\cluster.py
+# hypothesis_version: 6.151.9
+
+['/_cluster/reroute', '/_cluster/settings', '/_cluster/stats', '/_remote/info', 'DELETE', 'GET', 'HEAD', 'POST', 'PUT', '_all', '_cluster', '_component_template', '_status', 'allow_no_indices', 'awareness', 'awareness_attribute', 'create', 'decommission', 'dry_run', 'error_trace', 'expand_wildcards', 'explain', 'filter_path', 'flat_settings', 'health', 'human', 'ignore_unavailable', 'include_defaults', 'include_disk_info', 'level', 'local', 'master_timeout', 'metric', 'node_ids', 'node_names', 'nodes', 'pretty', 'retry_failed', 'routing', 'source', 'state', 'stats', 'timeout', 'wait_for_events', 'wait_for_nodes', 'wait_for_removal', 'wait_for_status', 'wait_for_timeout', 'weights']

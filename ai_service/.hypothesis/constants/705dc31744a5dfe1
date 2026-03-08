@@ -1,0 +1,4 @@
+# file: C:\Users\HP\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\skill\skillforge-ai\ai_service\debugger.py
+# hypothesis_version: 6.151.9
+
+[0.3, 0.9, 3000, 10000, 'Code cannot be empty', 'Unknown error', '```[\\w]*\\n(.*?)```', 'bug', 'c++', 'corrected', 'corrected_code', 'cpp', 'description', 'error', 'errors', 'explanation', 'fixed_code', 'go', 'issue', 'java', 'javascript', 'line', 'message', 'problem', 'python', 'rust', 'typescript', '{', '}']

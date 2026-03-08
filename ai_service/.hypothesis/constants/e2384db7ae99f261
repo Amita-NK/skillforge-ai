@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\wlm.py
+# hypothesis_version: 6.151.9
+
+['/_wlm/query_group', 'DELETE', 'GET', 'PUT', '_wlm', 'error_trace', 'filter_path', 'human', 'pretty', 'query_group', 'source']

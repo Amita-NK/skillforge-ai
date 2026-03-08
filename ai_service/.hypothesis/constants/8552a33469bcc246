@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\rollups.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_explain', '_plugins', '_rollup', '_start', '_stop', 'error_trace', 'filter_path', 'human', 'if_primary_term', 'if_seq_no', 'jobs', 'pretty', 'source']

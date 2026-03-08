@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\features.py
+# hypothesis_version: 6.151.9
+
+['/_features', '/_features/_reset', 'GET', 'POST', 'master_timeout']

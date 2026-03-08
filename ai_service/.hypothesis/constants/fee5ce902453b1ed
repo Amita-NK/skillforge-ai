@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\connection\http_urllib3.py
+# hypothesis_version: 6.151.9
+
+[200, 300, ':', 'CERT_NONE', 'CERT_REQUIRED', 'N/A', 'TIMEOUT', 'assert_fingerprint', 'assert_hostname', 'ca_certs', 'cert_file', 'cert_reqs', 'content-encoding', 'content-type', 'gzip', 'key_file', 'localhost', 'maxsize', 'ssl_context', 'ssl_version', 'surrogatepass', 'timeout', 'utf-8', 'warning']

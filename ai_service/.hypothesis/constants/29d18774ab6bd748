@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\helpers\faceted_search.py
+# hypothesis_version: 6.151.9
+
+[1000.0, '1M', '1Y', '1d', '1h', '1w', 'DateHistogramFacet', 'FacetedSearch', 'HistogramFacet', 'NestedFacet', 'RangeFacet', 'TermsFacet', '^', '_facets', '_filter_', 'calendar_interval', 'date_histogram', 'day', 'default', 'desc', 'doc_count', 'field', 'filter', 'fixed_interval', 'from', 'gte', 'histogram', 'hour', 'inner', 'interval', 'key', 'keyed', 'lt', 'metric', 'min_doc_count', 'month', 'multi_match', 'nested', 'order', 'range', 'ranges', 'terms', 'to', 'value', 'week', 'year']

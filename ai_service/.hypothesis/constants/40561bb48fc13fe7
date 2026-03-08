@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\neural.py
+# hypothesis_version: 6.151.9
+
+['GET', '_neural', '_plugins', 'error_trace', 'filter_path', 'flat_stat_paths', 'human', 'include_all_nodes', 'include_info', 'include_metadata', 'pretty', 'source', 'stats']

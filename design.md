@@ -11,7 +11,7 @@ Frontend → Backend → AI Engine → Database
 - CloudFront → S3  
 - API Gateway → Lambda/EC2  
 - Database → RDS  
-- AI → SageMaker  
+- AI → bedrock
 - Auth → Cognito  
 
 ---

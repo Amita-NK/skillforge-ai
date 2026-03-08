@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\exceptions.py
+# hypothesis_version: 6.151.9
+
+[400, 401, 403, 404, 409, ', ', 'ConflictError', 'ConnectionError', 'ConnectionTimeout', 'IllegalOperation', 'ImproperlyConfigured', 'NotFoundError', 'OpenSearchException', 'OpenSearchWarning', 'RequestError', 'SSLError', 'SerializationError', 'TransportError', 'UnknownDslObject', 'ValidationException', 'error', 'reason', 'resource.id', 'resource.type', 'root_cause']

@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\transforms.py
+# hypothesis_version: 6.151.9
+
+['/_plugins/_transform', 'DELETE', 'GET', 'POST', 'PUT', '_explain', '_plugins', '_start', '_stop', '_transform', 'error_trace', 'filter_path', 'from', 'from_', 'human', 'if_primary_term', 'if_seq_no', 'pretty', 'search', 'size', 'sortDirection', 'sortField', 'source']

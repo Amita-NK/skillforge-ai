@@ -1,0 +1,4 @@
+# file: C:\Users\HP\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\skill\skillforge-ai\ai_service\config.py
+# hypothesis_version: 6.151.9
+
+['.env', '0.7', '0.9', '2000', '50', '500', 'AWS_ACCESS_KEY_ID', 'AWS_REGION', 'BEDROCK_MODEL_ID', 'CHUNK_OVERLAP', 'CHUNK_SIZE', 'MAX_TOKENS', 'OPENSEARCH_ENDPOINT', 'OPENSEARCH_PASSWORD', 'OPENSEARCH_USERNAME', 'S3_BUCKET_NAME', 'S3_REGION', 'TEMPERATURE', 'TOP_P', 'anthropic.claude-v2', 'us-east-1']

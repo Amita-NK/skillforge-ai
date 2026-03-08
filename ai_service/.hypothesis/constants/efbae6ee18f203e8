@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\connection\http_requests.py
+# hypothesis_version: 6.151.9
+
+[200, 300, ':', 'Content-Type', 'N/A', 'TIMEOUT', 'accept-encoding', 'allow_redirects', 'content-encoding', 'gzip', 'http://', 'https://', 'localhost', 'surrogatepass', 'timeout', 'utf-8', 'warning']

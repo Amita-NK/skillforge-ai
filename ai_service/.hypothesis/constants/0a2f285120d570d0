@@ -1,0 +1,4 @@
+# file: C:\Users\HP\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\skill\skillforge-ai\ai_service\rag.py
+# hypothesis_version: 6.151.9
+
+[100, 500, '.', 'AccessDenied', 'Body', 'Code', 'Error', 'NoSuchBucket', 'NoSuchKey', 'Unknown', '_score', '_source', 'analyzer', 'chunk_index', 'content', 'course_materials', 'date', 'dimension', 'embedding', 'hits', 'index', 'integer', 'k', 'keyword', 'knn', 'knn_vector', 'mappings', 'metadata', 'properties', 'query', 's3', 's3_bucket', 's3_key', 'score', 'settings', 'size', 'source', 'standard', 'text', 'topic', 'type', 'upload_date', 'utf-8', 'vector']

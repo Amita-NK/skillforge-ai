@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\security.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'PATCH', 'POST', 'PUT', '_plugins', '_security', 'accept_invalid', 'actiongroups', 'api', 'auth_type', 'authtoken', 'cert_type', 'certificates', 'error_trace', 'filter_path', 'human', 'internalusers', 'mode', 'nodesdn', 'pretty', 'roles', 'rolesmapping', 'show_all', 'show_dn', 'source', 'tenants', 'timeout', 'user', 'verbose']

@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\plugins.py
+# hypothesis_version: 6.151.9
+
+['alerting', 'asynchronous_search', 'flow_framework', 'geospatial', 'index_management', 'knn', 'ltr', 'ml', 'neural', 'notifications', 'observability', 'ppl', 'query', 'replication', 'rollups', 'search_relevance', 'security_analytics', 'sm', 'sql', 'transforms', 'ubi']

@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\client\snapshot.py
+# hypothesis_version: 6.151.9
+
+['DELETE', 'GET', 'POST', 'PUT', '_cleanup', '_clone', '_restore', '_snapshot', '_status', '_verify', 'error_trace', 'filter_path', 'human', 'ignore_unavailable', 'local', 'master_timeout', 'pretty', 'source', 'timeout', 'verbose', 'verify', 'wait_for_completion']

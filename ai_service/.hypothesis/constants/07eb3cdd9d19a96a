@@ -1,0 +1,4 @@
+# file: C:\Users\HP\AppData\Roaming\Python\Python313\site-packages\opensearchpy\plugins\sql.py
+# hypothesis_version: 6.151.9
+
+['/_plugins/_sql', '/_plugins/_sql/close', '/_plugins/_sql/stats', 'GET', 'POST', 'PUT', 'error_trace', 'filter_path', 'format', 'human', 'pretty', 'sanitize', 'source']
